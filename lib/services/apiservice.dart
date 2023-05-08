@@ -4,7 +4,7 @@ import 'package:expense_api/model/article.dart';
 
 class ApiService
 {
-  final endpoint="https://newsapi.org/v2/everything?q=apple&from=2023-05-06&to=2023-05-06&sortBy=popularity&apiKey=5d18ed8225034f1bb7b0ebce3b80aa05";
+  final endpoint="https://newsapi.org/v2/everything?domains=wsj.com&apiKey=5e98152fd104453196db6a5652d92b0d";
   Future<List<Article>> getArticle() async{
     Response response = await get(Uri.parse(endpoint));
 
